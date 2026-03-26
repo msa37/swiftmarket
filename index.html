@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftMarket - Livraison au Togo</title>
-    <meta name="description" content="Commandez vos produits alimentaires et faites-vous livrer rapidement au Togo avec SwiftMarket. Livraison express de riz, huile, poisson et légumes.">
-    <meta name="keywords" content="livraison Togo, courses Togo, produits alimentaires Togo, SwiftMarket, marché en ligne">
+    <title>SwiftMarket | Le marché à portée de clic - Livraison Togo</title>
+    <meta name="description" content="SwiftMarket : Commandez vos produits alimentaires et courses locales au Togo et faites-vous livrer rapidement. Le marché à portée de clic via WhatsApp.">
+    <meta name="keywords" content="livraison Togo, courses Togo, produits alimentaires Togo, SwiftMarket, marché en ligne Lomé">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
+    <!-- Header & Navigation -->
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="SwiftMarket Logo">
-                <span>SwiftMarket</span>
+                <span class="logo-text">Swift<span>Market</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#catalogue">Catalogue</a></li>
-                <li><a href="#packs">Packs</a></li>
+                <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                <li><a href="#produits">Produits</a></li>
                 <li><a href="#temoignages">Témoignages</a></li>
-                <li><a href="#contact">Commander</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -44,237 +41,161 @@
             <div class="hero-text">
                 <h1>Fatigué de perdre du temps au marché ?</h1>
                 <p class="slogan">“Le marché à portée de clic”</p>
-                <p>Commandez vos produits et faites-vous livrer rapidement chez vous ou au bureau.</p>
-                <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20passer%20ma%20commande%20aujourd’hui" class="btn btn-primary whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
-                </a>
+                <p class="sub-headline">Commandez vos produits frais et essentiels depuis chez vous et faites-vous livrer rapidement partout au Togo.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20passer%20ma%20commande%20aujourd’hui" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+                    </a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/hero_banner.jpg" alt="Produits frais SwiftMarket">
+                <img src="assets/images/marche.jpg" alt="Marché SwiftMarket Togo">
             </div>
         </div>
     </section>
 
-    <!-- 🔥 Les plus commandés -->
-    <section class="most-ordered">
+    <!-- How it Works Section -->
+    <section id="comment-ca-marche" class="how-it-works">
         <div class="container">
-            <h2 class="section-title">🔥 Les plus commandés</h2>
-            <div class="product-grid mini">
-                <div class="product-card mini">
-                    <img src="assets/images/products_hero.jpg" alt="Riz local">
-                    <h4>Riz local</h4>
-                    <p>2500 FCFA</p>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Riz%20local" class="btn-wa-mini"><i class="fab fa-whatsapp"></i></a>
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-list-check"></i></div>
+                    <h3>1. Envoie ta liste</h3>
+                    <p>Listez vos produits sur WhatsApp en un clic. Simple et rapide.</p>
                 </div>
-                <div class="product-card mini">
-                    <img src="assets/images/grocery_store.jpg" alt="Huile">
-                    <h4>Huile végétale</h4>
-                    <p>4000 FCFA</p>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20de%20l'Huile%20végétale" class="btn-wa-mini"><i class="fab fa-whatsapp"></i></a>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-basket-shopping"></i></div>
+                    <h3>2. On s'occupe de tout</h3>
+                    <p>Nos experts sélectionnent les meilleurs produits au meilleur prix pour vous.</p>
                 </div>
-                <div class="product-card mini">
-                    <img src="assets/images/app_preview.jpg" alt="Pack Famille">
-                    <h4>Pack Famille</h4>
-                    <p>10 000 FCFA</p>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20le%20Pack%20Famille" class="btn-wa-mini"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="product-card mini">
-                    <img src="assets/images/products_hero.jpg" alt="Poisson">
-                    <h4>Poisson frais</h4>
-                    <p>1200 FCFA</p>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Poisson%20frais" class="btn-wa-mini"><i class="fab fa-whatsapp"></i></a>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>3. Reçois ta livraison</h3>
+                    <p>Votre commande arrive à votre porte en un temps record. Gain de temps garanti !</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Catalogue Section -->
-    <section id="catalogue" class="catalogue">
+    <!-- Products Section -->
+    <section id="produits" class="products">
         <div class="container">
-            <h2 class="section-title">Notre Catalogue</h2>
-            
-            <!-- 1️⃣ Essentiels du quotidien -->
-            <div class="category-block">
-                <h3 class="category-title"><i class="fas fa-shopping-basket"></i> Essentiels du quotidien</h3>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Riz local</h4>
-                            <p class="price">2500 FCFA / kg</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Riz%20local" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Riz importé</h4>
-                            <p class="price">3000 FCFA / kg</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Riz%20importé" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Huile de palme</h4>
-                            <p class="price">3500 FCFA / litre</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20de%20l'Huile%20de%20palme" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Huile végétale</h4>
-                            <p class="price">4000 FCFA / litre</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20de%20l'Huile%20végétale" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Sucre</h4>
-                            <p class="price">800 FCFA / kg</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Sucre" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Lait en poudre</h4>
-                            <p class="price">2500 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Lait%20en%20poudre" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Spaghetti</h4>
-                            <p class="price">600 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20des%20Spaghetti" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Farine de maïs</h4>
-                            <p class="price">1000 FCFA / kg</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20de%20la%20Farine%20de%20maïs" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="section-title">Nos Services & Produits</h2>
+            <div class="product-categories">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="alimentaire">Produits Alimentaires</button>
+                <button class="filter-btn" data-filter="livraison">Livraison</button>
+                <button class="filter-btn" data-filter="abonnement">Abonnement</button>
             </div>
 
-            <!-- 2️⃣ Produits frais -->
-            <div class="category-block">
-                <h3 class="category-title"><i class="fas fa-leaf"></i> Produits frais</h3>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Tomates</h4>
-                            <p class="price">1000 à 2000 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20des%20Tomates" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+            <div class="products-grid">
+                <!-- Riz Local -->
+                <div class="product-card" data-category="alimentaire">
+                    <div class="product-img">
+                        <img src="assets/images/riz.jpg" alt="Riz local">
                     </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Oignons</h4>
-                            <p class="price">1000 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20des%20Oignons" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+                    <div class="product-info">
+                        <h3>Riz local</h3>
+                        <p class="price">2500 FCFA / kg</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20je%20souhaite%20commander%20du%20Riz%20local" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Piment / Ail / Gingembre</h4>
-                            <p class="price">500 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Piment/Ail/Gingembre" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+                </div>
+
+                <!-- Huile -->
+                <div class="product-card" data-category="alimentaire">
+                    <div class="product-img">
+                        <img src="assets/images/epicerie.jpg" alt="Huile végétale">
                     </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Poisson frais</h4>
-                            <p class="price">1200 à 2000 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Poisson%20frais" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+                    <div class="product-info">
+                        <h3>Huile Végétale</h3>
+                        <p class="price">3500 FCFA / litre</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20je%20souhaite%20commander%20de%20l'huile" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Poulet local</h4>
-                            <p class="price">3500 à 5000 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20du%20Poulet%20local" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+                </div>
+
+                <!-- Poisson -->
+                <div class="product-card" data-category="alimentaire">
+                    <div class="product-img">
+                        <img src="assets/images/epicerie.jpg" alt="Poisson frais">
                     </div>
-                    <div class="product-card">
-                        <div class="product-info">
-                            <h4>Œufs (plateau)</h4>
-                            <p class="price">2500 à 3000 FCFA</p>
-                            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20un%20plateau%20d'oeufs" class="btn btn-outline btn-sm">Commander via WhatsApp</a>
-                        </div>
+                    <div class="product-info">
+                        <h3>Poisson frais</h3>
+                        <p class="price">1200 FCFA / unité</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20je%20souhaite%20commander%20du%20poisson%20frais" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Légumes -->
+                <div class="product-card" data-category="alimentaire">
+                    <div class="product-img">
+                        <img src="assets/images/fruits.jpg" alt="Légumes frais">
+                    </div>
+                    <div class="product-info">
+                        <h3>Légumes du marché</h3>
+                        <p class="price">1000 – 2000 FCFA</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20je%20souhaite%20commander%20des%20légumes" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Livraison Express -->
+                <div class="product-card" data-category="livraison">
+                    <div class="product-img">
+                        <img src="assets/images/marche.jpg" alt="Livraison Express">
+                    </div>
+                    <div class="product-info">
+                        <h3>Livraison Express</h3>
+                        <p class="price">500 – 1000 FCFA</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20j'ai%20besoin%20d'une%20livraison%20express" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Abonnement Mensuel -->
+                <div class="product-card" data-category="abonnement">
+                    <div class="product-img">
+                        <img src="assets/images/marche.jpg" alt="Abonnement Mensuel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pack Abonnement Mensuel</h3>
+                        <p class="price">Sur mesure</p>
+                        <p class="desc-text">Simplifiez votre vie avec nos livraisons programmées.</p>
+                        <a href="https://wa.me/22893392515?text=Bonjour,%20je%20souhaite%20en%20savoir%20plus%20sur%20l'abonnement%20mensuel" class="btn-sm-whatsapp">
+                            <i class="fab fa-whatsapp"></i> S'abonner
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3️⃣ Packs recommandés -->
-    <section id="packs" class="packs">
+    <!-- Data Collection Form -->
+    <section class="data-collection">
         <div class="container">
-            <h2 class="section-title">Packs Recommandés</h2>
-            <div class="pack-grid">
-                <div class="pack-card featured">
-                    <div class="pack-badge">Populaire</div>
-                    <h3>Pack Étudiant</h3>
-                    <p class="pack-price">5000 FCFA</p>
-                    <ul class="pack-list">
-                        <li><i class="fas fa-check"></i> Riz (2kg)</li>
-                        <li><i class="fas fa-check"></i> Huile (1L)</li>
-                        <li><i class="fas fa-check"></i> Spaghetti (2 paquets)</li>
-                        <li><i class="fas fa-check"></i> Tomates & Oignons</li>
-                    </ul>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20le%20Pack%20Étudiant" class="btn btn-primary full-width">Commander le Pack</a>
-                </div>
-                <div class="pack-card featured highlight">
-                    <div class="pack-badge">Meilleur Choix</div>
-                    <h3>Pack Famille</h3>
-                    <p class="pack-price">10 000 FCFA</p>
-                    <ul class="pack-list">
-                        <li><i class="fas fa-check"></i> Riz (5kg)</li>
-                        <li><i class="fas fa-check"></i> Huile (2L)</li>
-                        <li><i class="fas fa-check"></i> Poisson ou Poulet</li>
-                        <li><i class="fas fa-check"></i> Panier de légumes frais</li>
-                    </ul>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20le%20Pack%20Famille" class="btn btn-white full-width">Commander le Pack</a>
-                </div>
-                <div class="pack-card featured">
-                    <div class="pack-badge">Économique</div>
-                    <h3>Pack Hebdomadaire</h3>
-                    <p class="pack-price">15 000 FCFA</p>
-                    <ul class="pack-list">
-                        <li><i class="fas fa-check"></i> Courses complètes semaine</li>
-                        <li><i class="fas fa-check"></i> Produits frais & secs</li>
-                        <li><i class="fas fa-check"></i> Livraison incluse</li>
-                        <li><i class="fas fa-check"></i> Gain de temps max</li>
-                    </ul>
-                    <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20commander%20le%20Pack%20Hebdomadaire" class="btn btn-primary full-width">Commander le Pack</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4️⃣ Services -->
-    <section class="services">
-        <div class="container">
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-truck"></i>
-                    <h4>Livraison Standard</h4>
-                    <p>500 FCFA</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-bolt"></i>
-                    <h4>Livraison Express</h4>
-                    <p>1000 FCFA</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-user-edit"></i>
-                    <h4>Achat Personnalisé</h4>
-                    <p>Sur mesure</p>
-                </div>
-            </div>
-            <div class="custom-list-cta">
-                <p>“Vous ne trouvez pas votre produit ? Envoyez-nous votre liste sur WhatsApp.”</p>
-                <a href="https://wa.me/22893392515?text=Bonjour,%20voici%20ma%20liste%20de%20courses%20personnalisée%20:" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Envoyer ma liste</a>
+            <div class="form-container">
+                <h3>Prêt à commander ?</h3>
+                <p>Laissez-nous vos coordonnées pour une prise en charge rapide.</p>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre Nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="district" placeholder="Votre Quartier" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="products" placeholder="Liste des produits souhaités" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                </form>
             </div>
         </div>
     </section>
@@ -283,63 +204,37 @@
     <section id="temoignages" class="testimonials">
         <div class="container">
             <h2 class="section-title">Ce que disent nos clients</h2>
-            <div class="testimonial-grid">
+            <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p>"SwiftMarket m'a sauvé la vie ! Plus besoin de passer des heures au grand marché de Lomé."</p>
+                    <p class="quote">"SwiftMarket m'a sauvé la vie ! Plus besoin de passer des heures au grand marché de Lomé le samedi."</p>
                     <div class="client-info">
-                        <strong>Mme Ablavi</strong>
-                        <span>Quartier Agoè</span>
+                        <img src="https://ui-avatars.com/api/?name=Afi+K&background=0056b3&color=fff" alt="Afi K.">
+                        <div>
+                            <h4>Afi K.</h4>
+                            <span>Quartier Agoè</span>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Les produits sont frais et la livraison est vraiment rapide. Je recommande vivement."</p>
+                    <p class="quote">"La qualité des légumes est exceptionnelle. On sent que c'est choisi avec soin."</p>
                     <div class="client-info">
-                        <strong>M. Koffi</strong>
-                        <span>Quartier Adidogomé</span>
+                        <img src="https://ui-avatars.com/api/?name=Koffi+M&background=0056b3&color=fff" alt="Koffi M.">
+                        <div>
+                            <h4>Koffi M.</h4>
+                            <span>Quartier Adidogomé</span>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Le service client sur WhatsApp est très réactif. C'est devenu mon application préférée pour les courses."</p>
+                    <p class="quote">"Livraison rapide et service client très réactif sur WhatsApp. Je recommande vivement !"</p>
                     <div class="client-info">
-                        <strong>Mme Essi</strong>
-                        <span>Quartier Bè</span>
+                        <img src="https://ui-avatars.com/api/?name=Sika+A&background=0056b3&color=fff" alt="Sika A.">
+                        <div>
+                            <h4>Sika A.</h4>
+                            <span>Quartier Baguida</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Order Form Section (Data Collection) -->
-    <section id="contact" class="order-form">
-        <div class="container">
-            <div class="form-container">
-                <h2>Passez votre commande</h2>
-                <p>Remplissez ce formulaire pour une prise en charge rapide.</p>
-                <form id="swiftOrderForm">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="neighborhood">Quartier de livraison</label>
-                        <input type="text" id="neighborhood" name="neighborhood" placeholder="Ex: Agoè, Adidogomé..." required>
-                    </div>
-                    <div class="form-group">
-                        <label for="frequency">Fréquence de commande souhaitée</label>
-                        <select id="frequency" name="frequency" required>
-                            <option value="" disabled selected>Choisissez une option</option>
-                            <option value="Une seule fois">Une seule fois</option>
-                            <option value="Hebdomadaire">Hebdomadaire (chaque semaine)</option>
-                            <option value="Bimensuelle">Bimensuelle (toutes les 2 semaines)</option>
-                            <option value="Mensuelle">Mensuelle (chaque mois)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="products">Liste des produits</label>
-                        <textarea id="products" name="products" rows="4" placeholder="Ex: 5kg de riz, 2L d'huile, tomates..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary full-width">Envoyer la commande</button>
-                </form>
             </div>
         </div>
     </section>
@@ -348,44 +243,49 @@
     <section class="final-cta">
         <div class="container">
             <h2>Ne perdez plus de temps !</h2>
-            <p>Commandez maintenant et recevez votre livraison rapidement.</p>
-            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20passer%20ma%20commande%20aujourd’hui" class="btn btn-primary btn-large">
+            <p>Commandez maintenant et recevez votre livraison rapidement chez vous.</p>
+            <a href="https://wa.me/22893392515?text=Bonjour,%20je%20veux%20passer%20ma%20commande%20aujourd’hui" class="btn btn-whatsapp-lg">
                 <i class="fab fa-whatsapp"></i> Commander maintenant
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
+    <footer id="contact">
+        <div class="container footer-grid">
             <div class="footer-brand">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="SwiftMarket Logo">
-                    <span>SwiftMarket</span>
-                </div>
+                <span class="logo-text">Swift<span>Market</span></span>
                 <p>“Le marché à portée de clic”</p>
             </div>
             <div class="footer-contact">
-                <h3>Contactez-nous</h3>
+                <h3>Contacts</h3>
                 <p><i class="fas fa-phone"></i> +228 93 39 25 15</p>
                 <p><i class="fab fa-whatsapp"></i> +228 93 39 25 15</p>
                 <p><i class="fas fa-envelope"></i> yesborntoshine@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#">Mentions Légales</a></li>
+                </ul>
             </div>
             <div class="footer-social">
                 <h3>Suivez-nous</h3>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SwiftMarket. Tous droits réservés. | <a href="#">Mentions légales</a></p>
+            <p>&copy; 2026 SwiftMarket. Tous droits réservés.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
